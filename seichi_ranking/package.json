@@ -34,7 +34,7 @@
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@5.12.0"
   },
   "volta": {
-    "node": "16.15.0",
+    "node": "16.20.0",
     "yarn": "1.22.18"
   }
 }
