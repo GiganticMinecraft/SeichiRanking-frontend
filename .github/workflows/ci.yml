@@ -17,4 +17,4 @@ jobs:
           yarn install
       - name: Build
         run: |
-          yarn build && yarn lint
+          cd seichi_ranking && yarn build && yarn lint
