@@ -7,11 +7,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Figure out volta requirements
+        id: find_version
+        # avoids double-managing
+        run: |
+          echo "node=$(jq -r '.volta.node' seichi_ranking/package.json)" >> $GITHUB_OUTPUT
+          echo "yarn=$(jq -r '.volta.yarn' seichi_ranking/package.json)" >> $GITHUB_OUTPUT
       - name: Install and override toolchain
         uses: volta-cli/action@v4
         with:
-          node-version: 16.15.0
-          yarn-version: 1.22.18
+          node-version: ${{ steps.find_version.outputs.node }}
+          yarn-version: ${{ steps.find_version.outputs.yarn }}
       - name: Pull dependencies
         run: |
           cd seichi_ranking && yarn install --frozen-lockfile --production=false
