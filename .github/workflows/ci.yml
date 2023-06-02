@@ -7,14 +7,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install volta
+      - name: Install and override toolchain
         run: |
           curl https://get.volta.sh | bash
           export VOLTA_HOME="$HOME/.volta"
           export PATH="$VOLTA_HOME/bin:$PATH"
           volta --version
-      - name: Override toolchain version
-        run: |
           volta node 16.15.0
           volta yarn 1.22.18
       - name: Pull dependencies
