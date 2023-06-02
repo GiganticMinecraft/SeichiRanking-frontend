@@ -13,7 +13,7 @@
     "@mui/material": "5.13.3",
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@5.12.0",
     "@mui/styled-engine-sc": "5.12.0",
-    "next": "12.1.5",
+    "next": "12.3.4",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "styled-components": "5.3.5"
@@ -25,7 +25,7 @@
     "@types/styled-components": "5.1.25",
     "@typescript-eslint/eslint-plugin": "5.59.8",
     "eslint": "8.21.0",
-    "eslint-config-next": "12.1.5",
+    "eslint-config-next": "12.3.4",
     "eslint-config-prettier": "^8.8.0",
     "next-transpile-modules": "9.0.0",
     "typescript": "4.9.5"
