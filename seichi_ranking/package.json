@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "yarn run next dev",
-    "build": "yarn run next build",
-    "start": "yarn run next start",
-    "lint": "yarn run next lint"
+    "dev": "yarn next dev",
+    "build": "yarn next build",
+    "start": "yarn next start",
+    "lint": "yarn next lint"
   },
   "dependencies": {
     "@mui/icons-material": "5.6.2",
