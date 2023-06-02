@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Box,
@@ -48,9 +48,9 @@ function a11yProps(index: number) {
 export const previewNavTabsId = "preview-nav-tabs";
 const tabs = [{ label: "HOME", link: "" }];
 
-const MainWindow: React.FC<{}> = () => {
+const MainWindow: React.FC<Record<string, never>> = () => {
   const router = useRouter();
-  const [tabIndex, setTabIndex] = React.useState(0);
+  const [tabIndex, setTabIndex] = useState(0);
 
   useEffect(() => {
     if (router) {
@@ -60,7 +60,7 @@ const MainWindow: React.FC<{}> = () => {
     }
   }, [router]);
 
-  const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const handleChange = (_: React.SyntheticEvent, newTabIndex: number) => {
     setTabIndex(newTabIndex);
