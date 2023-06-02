@@ -13,8 +13,8 @@ jobs:
           export VOLTA_HOME="$HOME/.volta"
           export PATH="$VOLTA_HOME/bin:$PATH"
           volta --version
-          volta node 16.15.0
-          volta yarn 1.22.18
+          volta install node@16.15.0
+          volta install yarn@1.22.18
       - name: Pull dependencies
         run: |
           yarn install
