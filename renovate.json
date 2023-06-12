@@ -5,7 +5,7 @@
   ],
   "packageRules": [
     {
-      "description": "automerge DefinitelyTyped type definitions"
+      "description": "automerge DefinitelyTyped type definitions", 
       "packagePatterns": ["^@types/"],
       "automerge": true,
       "major": {
