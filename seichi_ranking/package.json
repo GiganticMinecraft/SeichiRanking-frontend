@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mui/icons-material": "5.11.16",
-    "@mui/material": "5.13.3",
+    "@mui/icons-material": "5.14.1",
+    "@mui/material": "5.14.1",
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@5.12.0",
     "@mui/styled-engine-sc": "5.12.0",
     "next": "12.3.4",
